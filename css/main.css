@@ -1,0 +1,474 @@
+@import "./reset.css";
+@import "./settings.css";
+@import "./fonts.css";
+
+/* header */
+.logo-name {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    margin-left: 8px;
+    min-width: 130px;
+}
+
+.logo-container {
+    display: flex;
+}
+
+.header {
+    width: 100%;
+    height: 198px;
+    background-color: #3A1C17;
+    
+}
+
+.container-info {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.nav {
+    width: 100%;
+    height: 76px;
+    background-color:#331712;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 58%;
+    margin-left: 100px;
+    min-width: 755px;
+}
+ 
+.nav-bar a {
+    color:#fff;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+   
+}
+
+.header-info {
+    margin-left: 100px;
+    display: flex;
+    padding: 38px 0 38px 0;
+    margin-right: 100px;
+    justify-content: space-between;
+}
+
+.contacts {
+    margin-top: 5px;
+    display: flex;
+}
+
+.phone-number {
+    min-width: 185px;
+}
+
+.phone {
+    width: 28px;
+    height: 28px;
+    padding: 9px 16px 0 0;
+}
+
+.header-info .logo-icon { 
+    width: 36px;
+    height: 48px;
+}
+
+.schedule {
+    display: flex;
+    margin-top:5px;
+}
+
+.work-time {
+    min-width: 125px;
+}
+
+.watch {
+    width: 30px;
+    height: 30px;
+    padding: 9px 15px 0 0;
+}
+
+.cart {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fdfdfd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-icon {
+   width: 30px;
+   height: 28px;
+}
+
+/* wr-intro */
+
+.wr-intro {
+    background-image: url("../media/main-page/header/optimization/bg-cake-1x.jpg");
+    height: 620px;
+    width: 100%;
+    margin-top: 17px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wr-intro .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding:90px 70px 0 0; 
+}
+
+.wr-intro p {
+    font-family:"Montserrat-SemiBold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+}
+
+.wr-intro h1 {
+    font-family:"Montserrat-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+}
+
+.button-text {
+    font-family:"Montserrat-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button {
+    height: 64px;
+    width: 246px;
+    background: #AD1120;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color:  #99111f;
+}
+
+/* wr-about-us */
+
+.wr-about-us {
+    width: 100%;
+    height: 520px;
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+.wr-about-us .title {
+    font-family:"Montserrat-Bold", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 43px;
+    color: #3A1C17;
+    text-align: center;
+}
+
+.number {
+    font-family:"Montserrat-Bold", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    color: #AD1120;
+    padding-right: 20px;
+    width: 27px;
+}
+
+.number-first {
+    font-family:"Montserrat-Bold", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    color: #AD1120;
+    padding-right: 22px;
+}
+
+.block-title {
+    font-family:"Montserrat-SemiBold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #3A1C17;
+}
+
+.discription {
+    font-family:"Montserrat-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3A1C17;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 56px;
+}
+
+.about-us-block {
+    display: flex;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-us-left .about-us-block:last-child, .about-us-right .about-us-block:last-child {
+    margin-top: 60px;
+}
+
+/* reviews */
+
+.wr-reviews {
+    width: 100%;
+    height: 405px;
+    background-color: #3A1C17;
+}
+
+.wr-reviews .title {
+    font-family:"Montserrat-Bold", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 43px;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.reviews-container {
+    display: flex;  
+    padding-top: 50px; 
+    justify-content: space-around; 
+}
+
+.review-text {
+    font-family:"Montserrat-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-align: left;
+    height: 164px;
+    opacity: .7;
+}
+
+.wr-reviews .text {
+    width: 480px;
+}
+
+.container-item {
+    display: flex;
+    min-width: 522px;
+}
+
+.review-icon {
+    padding-right: 28px;
+}
+
+.discription p {
+    font-family:"Montserrat-Medium", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.discription {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* application */
+
+.wr-application {
+    display: flex;
+    justify-content: center;
+}
+
+.wr-application .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+    color: #3A1C17;
+}
+
+.wr-application .wrapper {
+    height: 620px;
+    margin: 60px 0 80px 0;
+    background-image: url(../media/main-page/shipping-payment/flowers-1x.jpg);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 86%;
+    background-size: cover;
+    background-position: center;
+}
+
+.application-info {
+    padding-top: 30px;
+}
+
+.wr-application .discription {
+    padding-top: 49px;
+}
+
+.wr-application .button {
+    margin-top: 49px;
+}
+
+/* shipping and payment */
+
+.shipping .title {
+    font-family:"Montserrat-Bold", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 43px;
+    color: #3A1C17;
+    padding-bottom: 35px;
+}
+
+.discription-text {
+    font-family:"Montserrat-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    min-width: 510px;
+}
+
+.shipping .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 80px 11px;
+}
+.shipping-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.shipping .up-button {
+    margin-top: 185px;
+}
+
+/* footer */
+
+.logo-name {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    margin-left: 8px;
+    min-width: 130px;
+}
+
+.logo-container {
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    height: 198px;
+    background-color: #3A1C17;
+    
+}
+
+.footer-info {
+    margin-left: 100px;
+    display: flex;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    margin-right: 100px;
+    justify-content: space-between;
+}
+
+.container-info {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+
+.footer .logo {
+    padding-bottom: 30px;
+}
+
+.location {
+    display: flex;
+    margin-top:5px;
+    min-width: 210px;
+}
+
+.footer-discription .discription-text {
+    font-family:"Montserrat-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FCFCFC;
+    opacity: 0.5;
+} 
+
+.icon-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 40px;
+    padding-left: 106px;
+    padding-right: 56px;
+}
+
+.instagram {
+    margin-left: 20px;
+    margin-right: 20px;
+} 
+
+.schedule {
+    display: flex;
+    margin: 5px 20px 0 20px
+}
