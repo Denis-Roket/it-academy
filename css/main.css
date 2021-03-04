@@ -4,7 +4,7 @@
 
 
 .wrapper {
-    max-width: 1440px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -277,6 +277,65 @@ nav a {
     align-items: flex-start;
 }
 
+/* our-sweets */
+
+.our-sweets .title {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 43px;
+    color: #3A1C17;
+    text-align: center;
+}
+
+/* tabs */
+
+
+
+.catalog-item {
+    width: 379px;
+}  
+  
+.photo img {
+    width: 379px;
+    height: 292px;
+}
+.name-weight p {
+    color:  #3a1c17;
+}
+
+.name-weight p:last-child {
+    opacity: 0.5;
+}
+
+.name-weight {
+    padding: 15px 0 15px 0;
+}
+
+.price-card p{
+    font-family:"Montserrat-Medium", sans-serif;
+    font-style: normal;
+    color: #ad1120;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.price-card, .name-weight {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bakery-products, .cakes, .cupcakes, .donuts, .drinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-item {
+    padding: 20px;
+}
+
 /* reviews */
 
 .wr-reviews {
@@ -287,6 +346,27 @@ nav a {
 
 .swiper {
     position: relative;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top:56%;
+    color: #fff;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top:56%;
+    color: #fff;
+} 
+
+.swiper-button-prev:active, .swiper-button-next:active {
+    color: red;
+    transition: 0s;
+}  
+
+.swiper-container {
+    padding-left: 25px;
 }
 
 .wr-reviews .title {
