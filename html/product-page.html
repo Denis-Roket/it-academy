@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product page</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header-info">
+                <div class="logo-container">
+                    <img class="logo-icon" src="../media/main-page/header/logo-1x.svg">
+                    <p class="logo-name"><a href="#">Сладости
+                            для радости</a></p>
+                </div>
+                <div class="container-info">
+                    <div class="contacts">
+                        <img class="phone" src="../media/main-page/header/phone-1x.svg">
+                        <p class="phone-number"><a href="#"> +375 (44) 333 33 33
+                                +375 (29) 222 22 22</a></p>
+                    </div>
+                    <div class="schedule">
+                        <img class="watch" src="../media/main-page/header/watch-1x.svg">
+                        <p class="work-time"><a href="#">07:00 – 21:00
+                                ежедневно</a></p>
+                    </div>
+                    <div class="cart">
+                        <div><a href="#"><img class="cart-icon" src="../media/main-page/header/cart-1x.svg"
+                                    alt="Корзина"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="wrapper">
+            <ul class="menu">
+                <li><a href="../index.html" class="menu-link">Главная</a></li>
+                <li><a href="#our-sweets" class="menu-link">Наши сладости</a></li>
+                <li><a href="#wr-reviews" class="menu-link">Отзывы</a></li>
+                <li><a href="#shipping" class="menu-link">Доставка и оплата</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="product-page">
+        <div class="wrapper">
+            <ul class="breadcrumb">
+                <li><a href="../index.html">Главная</a></li>
+                <img src="../media/product-page/breadcrumb-icon.svg" alt="">
+                <li><a href="#">Наши сладости</a></li>
+                <img src="../media/product-page/breadcrumb-icon.svg" alt="">
+                <li><a href="#">Торты</a></li>
+            </ul>
+            <div class="selected-item">
+                <div class="product-photos">
+                    <img class="main-photo" src="../media/product-page/cake1-2x.jpg" alt="медовик">
+                    <img class="other-photos" src="../media/product-page/Rectangle 18.jpg" alt="медовик">
+                    <img class="other-photos" src="../media/product-page/Rectangle 19.jpg" alt="медовик">
+                </div>
+                <div class="product-discription">
+                    <h1 class="title">Медовик</h1>
+                    <div class="tab-header">
+                        <div class="tab-item" onclick="openInfo(event, 'discription')" id="defaultOpen">
+                            <p class="tab-link">Описание</p>
+                        </div>
+                        <div class="tab-item" onclick="openInfo(event, 'composition')">
+                            <p class="tab-link">Состав</p>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div id="discription" class="tab-content">
+                            <p>Классический Медовик, сделанный в лучших традициях: ароматные коржи, пропитанные медом, с
+                                прослойками из натурального сметанно-сливочного крема.
+                            </p>
+                            <p> Он вам точно понравится — слово Кондитера!</p>
+                        </div>
+
+                        <div id="composition" class="tab-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ex nisi magnam
+                                voluptas, amet perferendis iusto hic maiores praesentium impedit?
+                            </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <p class="weight">Вес - 1 кг</p>
+                        <div class="product-price-controls">
+                            <p class="product-price">38 руб.</p>
+                            <div class="product-amount">
+                                <img src="../media/product-page/–.svg" alt="minus">
+                                <p class="amount">1</p>
+                                <img src="../media/product-page/+.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="button"><a href="./cart.html" class="button-text">В корзину</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="other-goods">
+                <h1 class="title">Смотрите также</h1>
+                <div class="catalog-container">
+                    <div class="catalog-item">
+                        <div class="photo">
+                            <img src="../media/main-page/our-sweets/donut-image-1x.jpg" alt="пончик">
+                        </div>
+                        <div class="item-discription">
+                            <div class="name-weight">
+                                <p>Пончики с помадкой</p>
+                                <p>300 гр</p>
+                            </div>
+                            <div class="price-card">
+                                <p>10 руб.</p>
+                                <img src="../media/main-page/our-sweets/card-icon-1x.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="photo">
+                            <img src="../media/main-page/our-sweets/coffe-image-1x.jpg" alt="кофе">
+                        </div>
+                        <div class="item-discription">
+                            <div class="name-weight">
+                                <p>Латте</p>
+                                <p>300 мл</p>
+                            </div>
+                            <div class="price-card">
+                                <p>4 руб.</p>
+                                <img src="../media/main-page/our-sweets/card-icon-1x.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="photo">
+                            <img src="../media/main-page/our-sweets/cupcake-image-1x.jpg" alt="кекс">
+                        </div>
+                        <div class="item-discription">
+                            <div class="name-weight">
+                                <p>Кексы ванильные</p>
+                                <p>300 гр</p>
+                            </div>
+                            <div class="price-card">
+                                <p>10 руб.</p>
+                                <img src="../media/main-page/our-sweets/card-icon-1x.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="footer">
+        <div class="wrapper">
+            <div class="footer-info">
+                <div class="logo-container">
+                    <img class="logo-icon" src="../media/main-page/header/logo-1x.svg">
+                    <p class="logo-name"><a href="#">Сладости
+                            для радости</a></p>
+                </div>
+                <div class="container-info">
+                    <div class="contacts">
+                        <img class="phone" src="../media/main-page/header/phone-1x.svg">
+                        <p class="phone-number"><a href="#">+375 (44) 333 33 33
+                                +375 (29) 222 22 22</a></p>
+                    </div>
+                    <div class="schedule">
+                        <img class="watch" src="../media/main-page/header/watch-1x.svg">
+                        <p class="work-time"><a href="#">07:00 – 21:00
+                                ежедневно</a></p>
+                    </div>
+                    <div class="location">
+                        <img class="watch" src="../media/main-page/footer/location-1x.svg">
+                        <p class="work-time"><a href="#">г. Минск
+                                ул. К.Маркса, 28</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="icon-wrapper">
+                    <div class="icon-container">
+                        <a href="https://vk.com/" target="_blank" class="vk"><img
+                                src="../media/main-page/footer/vk-icon-1x.svg" alt="vk"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img class="instagram"
+                                src="../media/main-page/footer/inst-icon-1x.svg" alt="instagram"></a>
+                        <a href="https://facebook.com" target="_blank"><img
+                                src="../media/main-page/footer/fb-icon-1x.svg" alt="facebook"></a>
+                    </div>
+                    <div class="footer-discription">
+                        <div class="discription-text">&#169; 2020 ЧУП «Сладости для радости». Все права защищены.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>

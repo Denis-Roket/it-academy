@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <div class="scroll-to-top-btn" onclick="topFunction()" id="topBtn" title="Go to top">
+        <img src="./media/main-page/up-arrow.svg">
+    </div>
     <header>
         <div class="wrapper">
             <div class="header-info">
@@ -43,15 +46,15 @@
     <nav>
         <div class="wrapper">
             <ul class="menu">
-                <li><a href="#" class="menu-link">Главная</a></li>
-                <li><a href="#" class="menu-link">Наши сладости</a></li>
-                <li><a href="#" class="menu-link">Отзывы</a></li>
-                <li><a href="#" class="menu-link">Доставка и оплата</a></li>
+                <li><a href="#wr-intro" class="menu-link">Главная</a></li>
+                <li><a href="#our-sweets" class="menu-link">Наши сладости</a></li>
+                <li><a href="#wr-reviews" class="menu-link">Отзывы</a></li>
+                <li><a href="#shipping" class="menu-link">Доставка и оплата</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="wr-intro">
+    <section class="wr-intro" id="wr-intro">
         <div class="wrapper">
             <div class="intro-block">
                 <p>Заказать доставку
@@ -107,37 +110,38 @@
         </div>
     </section>
 
-    <section class="our-sweets">
+    <section class="our-sweets" id="our-sweets">
         <div class="wrapper">
             <p class="title">Наши сладости</p>
             <div class="tab-header">
-                <div class="tab-item">
+                <div class="tab-item" onclick="openSweet(event, 'cakes')" id="defaultOpen">
                     <img src="./media/main-page/our-sweets/cake-icon-1x.svg">
                     <p class="tab-link">Торты</p>
                 </div>
-                <div class="tab-item">
+                <div class="tab-item" onclick="openSweet(event, 'bakery-products')">
                     <img src="./media/main-page/our-sweets/bake-icon-1x.svg">
                     <p class="tab-link">Выпечка</p>
                 </div>
-                <div class="tab-item">
+                <div class="tab-item" onclick="openSweet(event, 'cupcakes')">
                     <img src="./media/main-page/our-sweets/cupcake-icon-1x.svg">
                     <p class="tab-link">Кексы</p>
                 </div>
-                <div class="tab-item">
+                <div class="tab-item" onclick="openSweet(event, 'donuts')">
                     <img src="./media/main-page/our-sweets/donut-icon-1x.svg">
-                    <p class="tab-link">Пончики</p> 
+                    <p class="tab-link">Пончики</p>
                 </div>
-                <div class="tab-item">
+                <div class="tab-item" onclick="openSweet(event, 'drinks')">
                     <img src="./media/main-page/our-sweets/coffee-cup-1x.svg">
                     <p class="tab-link">Напитки</p>
                 </div>
             </div>
 
             <div class="catalog-container">
-                <div class="cakes">
+                <div id="cakes" class="tab-content">
                     <div class="catalog-item">
                         <div class="photo">
-                            <img src="./media/main-page/our-sweets/cake1-1x.jpg" alt="медовик">
+                            <a href="./html/product-page.html"><img src="./media/main-page/our-sweets/cake1-1x.jpg"
+                                    alt="медовик"></a>
                         </div>
                         <div class="item-discription">
                             <div class="name-weight">
@@ -231,7 +235,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="bakery-products">
+                <div id="bakery-products" class="tab-content">
                     <div class="catalog-item">
                         <div class="photo">
                             <img src="./media/main-page/our-sweets/bakery-image-1x.jpeg" alt="круассан">
@@ -322,9 +326,9 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="cupcakes">
+                <div id="cupcakes" class="tab-content">
                     <div class="catalog-item">
                         <div class="photo">
                             <img src="./media/main-page/our-sweets/cupcake-image-1x.jpg" alt="кекс">
@@ -415,9 +419,9 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="donuts">
+                <div id="donuts" class="tab-content">
                     <div class="catalog-item">
                         <div class="photo">
                             <img src="./media/main-page/our-sweets/donut-image-1x.jpg" alt="пончик">
@@ -508,9 +512,9 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="drinks">
+                <div id="drinks" class="tab-content">
                     <div class="catalog-item">
                         <div class="photo">
                             <img src="./media/main-page/our-sweets/coffe-image-1x.jpg" alt="кофе">
@@ -601,11 +605,11 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
     </section>
 
-    <section class="wr-reviews">
+    <section class="wr-reviews" id="wr-reviews">
         <div class="wrapper swiper">
             <h1 class="title">Отзывы<h1>
                     <div class="swiper-button-prev"></div>
@@ -705,11 +709,8 @@
         </div>
     </section>
 
-    <section class="shipping">
+    <section class="shipping" id="shipping">
         <div class="wrapper">
-            <div class="up-button">
-                <a href="#" class="button-text"><img src="./media/main-page/shipping-payment/up-button.svg"></a>
-            </div>
             <div class="shipping-info">
                 <div class="discription-text">
                     <h1 class="title">Доставка и оплата</h1>
